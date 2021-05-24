@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+lcm();
+int main(){
+ lcm();
+}
+lcm()
+{
+    int a,b,final,fill=1;
+    printf("Enter of the numbers: ");
+    scanf("%d%d",&a,&b);
+    final=(a>b)?a:b;
+    while(fill){
+        if(final%a == 0 && final%b == 0){
+          printf("the answer is :%d",final)  ;
+          fill=0;
+        }
+        final++;
+    }
+}
